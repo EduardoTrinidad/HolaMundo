@@ -20,7 +20,7 @@ jobs:
 
     - name: Install dependencies and run tests
       run: |
-        npm install
+        npm ci
         npm test
 
     - name: Log in to Docker Hub
