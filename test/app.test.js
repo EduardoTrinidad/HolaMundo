@@ -1,5 +1,7 @@
+const obtenerSaludo = require('../saludo'); // Corrige la ruta si es necesario
+
 test('mensaje de saludo', () => {
-  const saludo = 'Hola mundo!\nEduardo Trinidad\nGrupo IDSW41\nMaestro Elizondo';
+  const saludo = obtenerSaludo();
   expect(saludo).toMatch(/Hola mundo!/);
   expect(saludo).toMatch(/Eduardo Trinidad/);
   expect(saludo).toMatch(/IDSW41/);
