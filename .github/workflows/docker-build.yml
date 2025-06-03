@@ -9,8 +9,10 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout del repositorio
+      - name: Checkout del repositorio sin submódulos
         uses: actions/checkout@v3
+        with:
+          submodules: false
 
       - name: Configurar Node.js
         uses: actions/setup-node@v3
