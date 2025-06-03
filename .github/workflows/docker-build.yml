@@ -20,11 +20,8 @@ jobs:
       - name: Instalar dependencias
         run: npm install
 
-      - name: Arreglar permisos para Mocha
-        run: chmod +x ./node_modules/.bin/mocha
-
-      - name: Ejecutar pruebas unitarias
-        run: npm test
+      - name: Ejecutar pruebas unitarias con Jest
+        run: npx jest
 
       - name: Login a Docker Hub
         uses: docker/login-action@v3
