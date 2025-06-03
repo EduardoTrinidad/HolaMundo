@@ -33,8 +33,3 @@ jobs:
         uses: docker/setup-buildx-action@v3
 
       - name: Validar y compilar imagen Docker
-        uses: docker/build-push-action@v6
-        with:
-          file: docker-bake.hcl
-          push: true
-          tags: eduardot0/hola-mundo:latest
